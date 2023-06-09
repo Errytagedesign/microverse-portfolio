@@ -20,56 +20,72 @@
 
   <body>
     <header>
-      <a href="index.html" class="my-logo">My Logo</a>
-
       <nav>
-        <div class="btn-scale">
+        <a href="index.html" class="my-logo">My Logo</a>
+        <figure class="btn-scale nav-icon">
           <img src="./assets/images/Union.svg" alt="nav icon" />
-        </div>
+        </figure>
+        <ul class="nav-items">
+          <li><a href="#Portfolio"> Portfolio </a></li>
+
+          <li><a href="#About"> About </a></li>
+
+          <li><a href="#Contact"> Contact</a></li>
+
+          <li>
+            <a href="#Contact">
+              <figure class="btn-scale">
+                <img src="./assets/images/Mail.svg" alt="nav icon" /></figure
+            ></a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1>Hey There. I’m Sodeeq.</h1>
-        <h3>I'm a Software Developer</h3>
-        <p>
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hesitate to contact me.
-        </p>
-
-        <ul class="icons">
-          <li>
-            <a href="#" class="btn-scale">
-              <img src="./assets/images/Icon -GitHub.svg" alt="nav icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="btn-scale">
-              <img src="./assets/images/Icon - Linkedin.svg" alt="nav icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="btn-scale">
-              <img src="./assets/images/Icon - Angelist.svg" alt="nav icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="btn-scale">
-              <img src="./assets/images/Frame.svg" alt="nav icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#" class="btn-scale">
-              <img src="./assets/images/Icon - Medium.svg" alt="nav icon" />
-            </a>
-          </li>
-        </ul>
+        <article class="hero-contents">
+          <div class="introduction">
+            <h1>Hey There. I’m Sodeeq.</h1>
+            <h3>I'm a Software Developer</h3>
+            <p>
+              I can help you build a product , feature or website Look through
+              some of my work and experience! If you like what you see and have
+              a project you need coded, don’t hesitate to contact me.
+            </p>
+          </div>
+          <ul class="icons">
+            <li>
+              <a href="#" class="btn-scale">
+                <img src="./assets/images/Icon -GitHub.svg" alt="nav icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-scale">
+                <img src="./assets/images/Icon - Linkedin.svg" alt="nav icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-scale">
+                <img src="./assets/images/Icon - Angelist.svg" alt="nav icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-scale">
+                <img src="./assets/images/Frame.svg" alt="nav icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="btn-scale">
+                <img src="./assets/images/Icon - Medium.svg" alt="nav icon" />
+              </a>
+            </li>
+          </ul>
+        </article>
       </section>
 
       <!-- Work -->
-      <section class="works-container">
+      <section class="works-container" id="Portfolio">
         <hgroup>
           <h2>My Recent Works</h2>
         </hgroup>
@@ -80,52 +96,55 @@
               alt="Codeeq Portfolio project samples"
             />
           </figure>
-          <h3>Multi-Post Stories</h3>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul>
-            <li>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CSS
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                HTML
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://getbootstrap.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Bootstrap
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.ruby-lang.org/en/documentation/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Ruby
-              </a>
-            </li>
-          </ul>
+          <div class="Multi-Post-content">
+            <h3>Multi-Post Stories</h3>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CSS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  HTML
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://getbootstrap.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Bootstrap
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.ruby-lang.org/en/documentation/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Ruby
+                </a>
+              </li>
+            </ul>
 
-          <button type="button"><a href="#"> See project </a></button>
+            <button type="button"><a href="#"> See project </a></button>
+          </div>
         </article>
         <article class="work-card">
           <div class="work-contents">
@@ -370,18 +389,20 @@
       </section>
 
       <!-- About-->
-      <section class="about-container">
+      <section class="about-container" id="About">
         <article class="about-hero">
-          <h2>About me</h2>
-          <p>
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hesitate to contact me.
-          </p>
-          <button type="button" class="about-btn">
-            <a href="#" target="_blank"> Get my resume </a>
-          </button>
+          <div class="about-hero-content">
+            <h2>About me</h2>
+            <p>
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
+            <button type="button" class="about-btn">
+              <a href="#" target="_blank"> Get my resume </a>
+            </button>
+          </div>
         </article>
         <ul class="about-skills">
           <li class="skill-sets-wrapper">
@@ -425,7 +446,7 @@
       </section>
 
       <!-- Contact Form -->
-      <section class="contact-form">
+      <section class="contact-form" id="Contact">
         <h2>
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.

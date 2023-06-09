@@ -85,12 +85,16 @@ button {
 /* ====== HEADER START ==== */
 
 header {
+  background: #3c3a39;
+}
+
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #3c3a39;
   padding: 1.5em 1em;
+  margin: 0 auto;
 }
 
 header .my-logo {
@@ -98,6 +102,26 @@ header .my-logo {
   font-weight: 700;
   color: var(--white);
   text-decoration: none;
+}
+
+.nav-items {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    width: 80%;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+
+  .nav-icon {
+    display: none;
+  }
 }
 
 /* ====== HEADER END ==== */
@@ -138,6 +162,36 @@ header .my-logo {
   width: 60%;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    background:
+      var(--black) url("../images/desktopHeroBg.svg") no-repeat center
+      right;
+    background-size: contain;
+    padding: 11em 2em;
+  }
+
+  .hero-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .introduction {
+    width: 85%;
+    order: 1;
+  }
+
+  .hero .icons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+  }
+}
+
 /* ====== HERO SECTION END ==== */
 
 /* ====== WORK SECTION START ==== */
@@ -168,7 +222,9 @@ hgroup h2 {
   flex-direction: column;
   justify-content: space-between;
   margin: 1em auto;
-  background: linear-gradient(#2626260a, #2626267e), url("../images//cardBg.png")  no-repeat;
+  background:
+    linear-gradient(#2626265a, #262626),
+    url("../images/cardBg.png");
   background-size: cover;
   color: var(--white);
   overflow: hidden;
@@ -206,8 +262,9 @@ figure img {
 }
 
 .work-card ul li:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--light-yellow);
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
   transform: scale(1.2);
   transition: 0.3s all ease-in-out;
 }
@@ -223,8 +280,9 @@ figure img {
 }
 
 .work-card button:hover {
-  background: var(--black);
+  background: var(--light-yellow);
   color: var(--primary-color);
+  border: solid 1px var(--primary-color);
   transform: scale(1.2);
   transition: 0.3s all ease-in-out;
 }
@@ -248,6 +306,92 @@ figure img {
 
 .work-contents {
   padding: 7em 1.3em 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .works-container {
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+    padding-top: 2em;
+    overflow: hidden;
+  }
+
+  .work-card,
+  hgroup {
+    width: 100%;
+  }
+
+  .work-card button {
+    display: none;
+  }
+
+  .work-contents ul {
+    margin-bottom: 2em;
+  }
+
+  .work-card:hover ul {
+    margin-bottom: 0;
+  }
+
+  .work-card:hover {
+    background: url("../images/cardBg.png") no-repeat;
+    background-size: cover;
+  }
+
+  .Multi-Post-content button {
+    margin-top: 2em;
+  }
+
+  .work-card:hover button {
+    display: block;
+  }
+
+  #Multi-Post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #Multi-Post figure {
+    width: 56%;
+  }
+
+  .Multi-Post-content {
+    width: 40%;
+  }
+
+  .Multi-Post-content h3 {
+    margin: 0 0 1em 0;
+  }
+
+  .Multi-Post-content p {
+    margin-bottom: 1.3em;
+  }
+
+  hgroup,
+  #Multi-Post {
+    grid-column: 1 / span 3;
+  }
+
+  hgroup h2 {
+    border-bottom: 0;
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  hgroup h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: var(--black);
+    height: 1px;
+    right: 0;
+    width: 70%;
+  }
 }
 
 /* ====== WORK SECTION END ==== */
@@ -289,8 +433,9 @@ figure img {
 }
 
 .about-hero .about-btn:hover {
-  background: var(--white);
+  background: var(--light-yellow);
   color: var(--primary-color);
+  border: solid 1px var(--primary-color);
   transform: scale(1.2);
   transition: 0.3s all ease-in-out;
 }
@@ -312,7 +457,7 @@ figure img {
 }
 
 .skill-sets-wrapper h3 {
-  margin: 1em auto;
+  margin: 1em 0;
   font-size: 2rem;
 }
 
@@ -320,7 +465,7 @@ figure img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .skill-title .icon {
@@ -343,6 +488,35 @@ figure img {
 .skill-sets {
   font-size: 1.5rem;
   margin: 1.5em auto;
+}
+
+@media screen and (min-width: 768px) {
+  .about-hero {
+    background:
+      url("../images/aboutDesktopBg.svg") no-repeat center
+      right;
+    padding: 4em 2em 10em;
+  }
+
+  .about-hero-content {
+    width: 45%;
+    margin-left: 3em;
+  }
+
+  .skill-title {
+    justify-content: flex-start;
+  }
+
+  .about-skills {
+    width: 85%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: start;
+  }
+
+  .skill-sets-wrapper {
+    justify-content: flex-start;
+  }
 }
 
 /* ====== ABOUT SECTION END ==== */
@@ -411,8 +585,9 @@ form {
 }
 
 .button:hover {
-  background: var(--black);
+  background: var(--light-yellow);
   color: var(--primary-color);
+  border: solid 1px var(--primary-color);
   transform: scale(1.2);
   transition: 0.3s all ease-in-out;
 }
@@ -430,6 +605,34 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    flex-direction: row;
+    width: 85%;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contact-form h2 {
+    text-align: start;
+    width: 35%;
+  }
+
+  form {
+    width: 65%;
+  }
+
+  .contact-form .form-list {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .social-icons {
+    width: 20%;
+  }
 }
 
 /* ====== CONTACT FORM END ==== */
