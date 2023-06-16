@@ -69,6 +69,7 @@ A Microverse Perosnal Portfolio Project developed with duo of HTML and CSS. In a
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 <a href="https://codeeq-microverse-portfolio.netlify.app/">Live Demo Link</a>
+<a href="https://errytagedesign.github.io/microverse-portfolio/">Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
