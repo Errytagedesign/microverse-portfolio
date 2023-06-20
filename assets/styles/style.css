@@ -24,6 +24,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: var(--white);
+  overflow-x: hidden;
 }
 
 h1,
@@ -95,6 +96,7 @@ nav {
   align-items: center;
   padding: 1.5em 1em;
   margin: 0 auto;
+  position: relative;
 }
 
 header .my-logo {
@@ -104,23 +106,91 @@ header .my-logo {
   text-decoration: none;
 }
 
+.close-navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  padding: 2em 1em;
+  height: 100vh;
+  left: 800px;
+  top: 0;
+  background: var(--black);
+  align-items: end;
+  transition: all 1s ease-in-out;
+}
+
+.open-navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  padding: 2em 1em;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #3c3a39;
+  align-items: end;
+  transition: all 1s ease-in-out;
+}
+
 .nav-items {
+  width: 100%;
+}
+
+.nav-list {
+  color: var(--light-yellow);
+  padding: 0.75em 1em;
+  font-weight: 700;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--light-grey);
+  margin-bottom: 1em;
+}
+
+.nav-list:last-child {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
   nav {
     width: 80%;
+    padding: 0;
+  }
+
+  .close-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background: transparent;
+    height: auto;
+    width: 30%;
+    top: 0;
+    left: 0;
+    padding: 1em;
   }
 
   .nav-items {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 30%;
   }
 
-  .nav-icon {
+  .nav-icon,
+  .close {
     display: none;
+  }
+
+  .nav-list {
+    color: var(--white);
+    padding: 2em 1em;
+    font-weight: 400;
+    font-size: 1rem;
+    border-bottom: 0 solid var(--light-grey);
+  }
+
+  .nav-list:last-child {
+    display: inherit;
   }
 }
 
@@ -230,7 +300,7 @@ hgroup h2 {
   overflow: hidden;
 }
 
-figure img {
+.work-card figure img {
   width: 100%;
 }
 
