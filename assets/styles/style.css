@@ -695,6 +695,12 @@ footer {
   width: 60%;
 }
 
+#error {
+  color: #f00;
+  margin-top: 0.4em;
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .contact-form {
     flex-direction: row;

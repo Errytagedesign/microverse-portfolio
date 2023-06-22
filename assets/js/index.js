@@ -343,6 +343,8 @@ liveImg.src = "/assets/images/live.png";
 gitImg.src = "/assets/images/github.png";
 closeImg.src = "/assets/images/Cancel.png";
 
+// 5. Display the corresponding data.
+
 function seeProjectDetails(work) {
   stackUL.innerHTML = "";
   if (work.id) {
@@ -368,4 +370,20 @@ function seeProjectDetails(work) {
   }
 }
 
-// 5. Display the corresponding data.
+// Client side validation
+const form = document.getElementById("form");
+const error = document.getElementById("error");
+const email = document.getElementById("email");
+
+// Whenever the email input field is active, the error message should be removed
+email.addEventListener("click", function () {
+  if (email === document.activeElement) error.style.display = "none";
+});
+
+form.addEventListener("submit", (event) => {
+  const regexMail = /[A-Z]/;
+  if (regexMail.test(email.value)) {
+    event.preventDefault();
+    error.style.display = "block";
+  }
+});
