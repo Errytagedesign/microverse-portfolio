@@ -753,7 +753,7 @@ footer {
   color: var(--black);
   width: 95%;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .project-contents p {
@@ -823,13 +823,11 @@ footer {
   .project-card {
     width: 85%;
     padding: 2em 1.5em;
-    overflow: hidden;
   }
 
   .project-contents {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: 1.5em 0;
   }
 
