@@ -370,6 +370,8 @@ hgroup h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0.5em;
+  font-size: 1rem;
 }
 
 .Btns button img {
@@ -731,8 +733,8 @@ footer {
 
 .showModal {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   padding: 2em 1em;
   background: #97949371;
@@ -749,6 +751,9 @@ footer {
   background: var(--white);
   padding: 1.4em 1em;
   color: var(--black);
+  width: 95%;
+  height: 100%;
+  overflow: scroll;
 }
 
 .project-contents p {
@@ -793,7 +798,7 @@ footer {
 
 .stackContainer {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   margin: 2em 0 0.5em 0;
 }
@@ -803,7 +808,7 @@ footer {
   padding: 0.625em 0.75em;
   transition: 0.3s all ease-in-out;
   border: solid 1px var(--black);
-  margin-right: 1em;
+  margin: 0 0.3em 0.3em 0;
 }
 
 .stackList:hover {
@@ -816,8 +821,9 @@ footer {
 
 @media screen and (min-width: 900px) {
   .project-card {
-    width: 80%;
+    width: 85%;
     padding: 2em 1.5em;
+    overflow: hidden;
   }
 
   .project-contents {
@@ -828,7 +834,7 @@ footer {
   }
 
   .project-contents figure {
-    width: 62%;
+    width: 60%;
     margin: 0;
   }
 
@@ -849,7 +855,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
   }
 
   .Btns button {
