@@ -167,6 +167,7 @@
               <input
                 type="text"
                 name="Full Name"
+                id="names"
                 placeholder="Full name"
                 minlength="2"
                 maxlength="30"
@@ -183,6 +184,7 @@
                 maxlength="30"
                 required
               />
+              <small id="error"> Please write your email in lowercase</small>
             </li>
             <li class="form-items">
               <label for="message"> </label>
@@ -191,15 +193,18 @@
                 cols="50"
                 maxlength="500"
                 name="message"
+                id="message"
                 placeholder="Write me something..."
                 required
               ></textarea>
             </li>
 
             <li>
-              <button class="button" type="submit">Get in touch</button>
+              <button id="submitBtn" class="button" type="submit">
+                Get in touch
+              </button>
             </li>
-            <small id="error"> Please write your email in lowercase</small>
+            <!-- <small id="error"> Please write your email in lowercase</small> -->
           </ul>
         </form>
       </section>
