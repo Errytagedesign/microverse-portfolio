@@ -145,6 +145,7 @@ header .my-logo {
   background: #3c3a39;
   align-items: end;
   transition: all 1s ease-in-out;
+  z-index: 20;
 }
 
 .nav-items {
