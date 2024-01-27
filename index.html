@@ -15,6 +15,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Codeeq Microverse Personal Portfolio Project</title>
   </head>
 
@@ -51,12 +52,22 @@
       <section class="hero">
         <article class="hero-contents">
           <div class="introduction">
-            <h1>Hey There. I’m Sodeeq.</h1>
-            <h3>I'm a Software Developer</h3>
-            <p>
-              I can help you build a product , feature or website Look through
-              some of my work and experience! If you like what you see and have
-              a project you need coded, don’t hesitate to contact me.
+            <h1 data-aos="zoom-in-down" data-aos-duration="1500">
+              Hey There. I’m Sodeeq.
+            </h1>
+            <h3 data-aos="fade-left" data-aos-duration="1500">
+              Passionate Software Engineer | Crafting Exceptional User
+              Experiences
+            </h3>
+            <p data-aos="fade-left" data-aos-duration="1500">
+              A Software Engineer dedicated to delivering exceptional user
+              experiences. With expertise in JavaScript, React, Next.js, Redux,
+              and Ruby, I specialize in creating intuitive and engaging web
+              interfaces. Driven by a passion for technology and a commitment to
+              excellence, I thrive in fast-paced environments where I can turn
+              ideas into reality. I'm always eager to collaborate with
+              like-minded professionals and take on new challenges. Let's create
+              something amazing together!
             </p>
           </div>
           <ul class="icons">
@@ -125,14 +136,19 @@
       <section class="about-container" id="About">
         <article class="about-hero">
           <div class="about-hero-content">
-            <h2>About me</h2>
-            <p>
+            <h2 data-aos="zoom-in-down" data-aos-duration="1500">About me</h2>
+            <p data-aos="zoom-in-down" data-aos-duration="1500">
               Hello I’m a software developer! I can help you build a product ,
               feature or website Look through some of my work and experience! If
               you like what you see and have a project you need coded, don’t
               hesitate to contact me.
             </p>
-            <button type="button" class="about-btn">
+            <button
+              data-aos="zoom-in-down"
+              type="button"
+              class="about-btn"
+              data-aos-duration="1500"
+            >
               <a
                 href="https://docs.google.com/document/d/1xsm9StZTrsSOXFAm_NqcTlTdUJYPiTn9qWPBFvDMGUI/edit"
                 target="_blank"
@@ -186,12 +202,18 @@
 
       <!-- Contact Form -->
       <section class="contact-form" id="Contact">
-        <h2>
+        <h2 data-aos="fade-left" data-aos-duration="1500">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h2>
 
-        <form action="https://formspree.io/f/mgebjlge" method="POST" id="form">
+        <form
+          action="https://formspree.io/f/mgebjlge"
+          method="POST"
+          id="form"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <ul class="form-list">
             <li class="form-items">
               <label for="Full Name"> </label>
@@ -289,6 +311,12 @@
         </ul>
       </footer>
     </main>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="/assets/js/index.js"></script>
   </body>
