@@ -303,7 +303,7 @@ hgroup h2 {
   flex-direction: column;
   justify-content: space-between;
   margin: 1em auto;
-  background: linear-gradient(#262626b2, #262626), url('../images/cardBg.png');
+  /* background: linear-gradient(#262626b2, #262626), url('../images/cardBg.png'); */
   background-size: cover;
   color: var(--white);
   overflow: hidden;
