@@ -9,7 +9,6 @@
 }
 
 body {
-  min-width: 375px;
   padding: 0;
   margin: 0;
   font-family: 'Poppins', 'Roboto', 'Helvetica', 'Arial', 'Verdana', 'Tahoma',
@@ -19,7 +18,6 @@ body {
   line-height: 24px;
   color: var(--white);
   overflow-x: hidden;
-  position: relative;
 }
 
 h1,
@@ -93,6 +91,7 @@ button:hover {
 
 .home {
   position: relative;
+  overflow-x: hidden;
 }
 
 /* ====== GLOBAL VARIABLES END ==== */
@@ -100,12 +99,13 @@ button:hover {
 /* ====== HEADER START ==== */
 
 header {
-  background: #3c3a39;
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 17;
+  background: #3c3a39;
 }
 
 nav {
@@ -116,6 +116,7 @@ nav {
   padding: 1.5em 1em;
   margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 
 header .my-logo {
@@ -394,7 +395,7 @@ hgroup h2 {
 } */
 
 #Multi-Post button {
-  width: 40%;
+  width: 50%;
 }
 
 #Multi-Post ul {
@@ -759,6 +760,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .project-card {
