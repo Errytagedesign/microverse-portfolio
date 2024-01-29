@@ -594,6 +594,7 @@ hgroup h2 {
 @media screen and (min-width: 768px) {
   .about-hero {
     background: url('../images/aboutDesktopBg.svg') no-repeat center right;
+    background-size: 40% 40%;
     padding: 4em 2em 10em;
   }
 
