@@ -23,12 +23,12 @@ navList.forEach((navItem) => {
 const recentWork = [
   {
     id: 1,
-    title: 'Spraay App',
+    title: 'Moview DB',
     shortDescription:
-      ' Spraay App is your gateway to a unique digital celebration that captures the spirit of money spraying. Spraay App brings cultural tradition and modern technology together for unforgettable experiences.',
+      ' Explore the world of cinema with our innovative web app crafted using React. Immerse yourself in a curated collection of globally acclaimed movies, elegantly presented in a user-friendly interface. From Hollywood blockbusters to international gems, our app showcases the best in cinematic entertainment. ',
 
     description:
-      "At Spraay, we are more than just a mobile application; we are the architects of tradition and innovation. We bring cultural richness and modern convenience together to create a unique digital experience that captures the essence of Nigeria's vibrant celebrations. \n<br> \n<br> Our Mission: \n<br> Our mission is simple: to rekindle the joy of age-old traditions in a digital age. We aim to empower individuals to celebrate life's moments, express generosity, and connect with their roots, all through the convenience of their mobile devices.  \n<br> \n<br> Who we are: \n<br>We are a passionate team of creators, innovators, and culture enthusiasts. Our diverse backgrounds and shared love for Nigeria's rich traditions drive us to redefine digital celebrations.",
+      'Introducing our latest creation: a cutting-edge web application built using React, designed to curate and showcase a comprehensive list of the most popular movies worldwide. With seamless integration of React technology, users can effortlessly explore an extensive array of globally acclaimed films, all within a user-friendly and intuitive interface. Stay informed, entertained, and captivated as you navigate through our meticulously curated collection of popular movies, right at your fingertips. Discover the cinematic wonders that captivate audiences around the globe with our React-powered web app.',
 
     previewImage: '/assets/images/spraay.png',
     technologies: [
@@ -38,10 +38,10 @@ const recentWork = [
         link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
       },
       { name: 'BOOTSTRAP', link: 'https://getbootstrap.com/' },
-      { name: 'NEXTJS', link: 'https://nextjs.org/docs' },
+      { name: 'REACTJS', link: 'https://react.dev/learn' },
     ],
-    liveLink: 'https://www.spraay.ng',
-    sourceLink: 'https://github.com/Errytagedesign/spraay',
+    liveLink: 'https://errytage-rmdb.netlify.app/',
+    sourceLink: 'https://github.com/Errytagedesign/react-mdb',
   },
   {
     id: 2,
